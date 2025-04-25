@@ -6,12 +6,11 @@ export const AppContext = createContext();
 
 const AppContextProvider = (props) => {
   const currencySymbol = "₹";
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl = "https://docmeet-h8w3.onrender.com";
   const [doctors, setDoctors] = useState([]);
   const [token, setToken] = useState(
-    localStorage.getItem("token") ? localStorage.getItem("token") : false
-  );
-  const [userData, setUserData] = useState(false);
+    localStorage.getItem("token") ? localStorage.getItem("token") : false);
+        const [userData, setUserData] = useState(false);
 
   const getDoctorsData = async () => {
     try {
