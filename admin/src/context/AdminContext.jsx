@@ -4,9 +4,8 @@ import { toast } from "react-toastify";
 import axios from "axios";
 export const AdminContext = createContext();
 const AdminContextprovider = (props) => {
-  const [AdminToken, setAdminToken] = useState(
-    localStorage.getItem("AdminToken") ? localStorage.getItem("AdminToken") : ""
-  );
+  const [AdminToken, setAdminToken] = useState(localStorage.getItem("AdminToken") ? localStorage.getItem("AdminToken") : "");
+  // const backendUrl ="https://docmeet-h8w3.onrender.com";
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
   const [doctors, setDoctors] = useState([]);
   const [appointments, setAppointments] = useState([]);
