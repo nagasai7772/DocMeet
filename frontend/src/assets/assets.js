@@ -31,7 +31,7 @@ import Doctor12 from './Doctor12.jpg'
 import Doctor13 from './Doctor13.jpg'
 import Doctor14 from './Doctor14.jpg'
 import Doctor15 from './Doctor15.jpg'
-import Signupimg from './Signupimage.jpg'
+import SignupImage from './Signupimage.jpg'
 import formimg from './loginsteth.png'
 import Dermatologist from './Dermatologist.svg'
 import Gastroenterologist from './Gastroenterologist.svg'
@@ -59,7 +59,7 @@ export const assets = {
     upload_icon,
     stripe_logo,
     razorpay_logo,
-    Signupimg,
+    SignupImage,
     formimg
 }
 

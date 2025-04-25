@@ -150,7 +150,7 @@ const Login = () => {
 
       <div className="w-full md:w-1/2  flex justify-center items-center p-6">
         <img
-          src={assets.Signupimg}
+          src={assets.SignupImage}
           alt="SignupImage"
           className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover rounded-lg shadow-lg -skew-x-6"
         />
