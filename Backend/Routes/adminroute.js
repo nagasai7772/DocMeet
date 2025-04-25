@@ -1,0 +1,15 @@
+const express=require('express')
+const {addDoctor,adminLogin, allDoctors, appointmentsAdmin,appointmentCancel,adminDashboard}=require('../controller/admincontroller')
+const upload=require('../middleware/multer')
+const authAdmin=require('../middleware/authadmin')
+const { changeAvailability } = require('../controller/doctorcontroller')
+const adminRouter=express.Router()
+adminRouter.post('/add-doctor',authAdmin,upload.single('image'),addDoctor)
+adminRouter.post('/login',adminLogin)
+adminRouter.post('/all-doctors',authAdmin,allDoctors)
+adminRouter.post('/change-availability',authAdmin,changeAvailability)
+adminRouter.get('/appointments',authAdmin,appointmentsAdmin)
+adminRouter.post('/cancelappointment',authAdmin,appointmentCancel)
+adminRouter.get('/dashboard',authAdmin,adminDashboard)
+
+module.exports=adminRouter
