@@ -9,12 +9,12 @@ const userRouter = require('./Routes/userRoute.js')
 require('dotenv').config()
 // App Config
 const app=express()
-const port=process.env.PORT ||3000
+const port="https://docmeet-h8w3.onrender.com"
 
 // MiddleWares
 app.use(express.json())
 app.use(cors({
-    origin:process.env.VITE_BACKEND_URL||'http//:localhost:3000',
+    origin:'https://docmeet-h8w3.onrender.com',
     credentials:true
 }))
 connectDB()
